@@ -8,7 +8,6 @@ class CancellationMail {
   }
 
   async handle({ data }) {
-    console.log('A fila executou!');
     const { appointment } = data;
 
     await Mail.sendMail({
